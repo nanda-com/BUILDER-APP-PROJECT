@@ -7,6 +7,7 @@ import '../../services/mock_data_service.dart';
 import '../../widgets/job_card.dart';
 import 'job_detail_screen.dart';
 import 'worker_profile_screen.dart';
+import 'learn_screen.dart';
 import '../auth/role_selection_screen.dart';
 
 class WorkerHomeScreen extends StatefulWidget {
@@ -74,7 +75,7 @@ class _WorkerHomeScreenState extends State<WorkerHomeScreen> {
       _homeBody(context),
       const ExploreGigsScreen(), // Replace Gigs placeholder
       const WorkerEarningsScreen(standalone: false),
-      const Scaffold(body: Center(child: Text('Learn Placeholder'))), // Learn
+      const LearnScreen(), // Replace Learn placeholder
     ];
 
     return Scaffold(

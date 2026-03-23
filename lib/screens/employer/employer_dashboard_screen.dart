@@ -5,6 +5,8 @@ import '../../services/auth_service.dart';
 import '../../services/mock_data_service.dart';
 import '../../widgets/job_card.dart';
 import '../auth/role_selection_screen.dart';
+import 'hiring_screen.dart';
+import 'messages_screen.dart';
 
 class EmployerDashboardScreen extends StatefulWidget {
   const EmployerDashboardScreen({super.key});
@@ -21,8 +23,8 @@ class _EmployerDashboardScreenState extends State<EmployerDashboardScreen> {
   Widget build(BuildContext context) {
     final screens = [
       _dashboardBody(),
-      const Scaffold(body: Center(child: Text('Hiring Placeholder'))),
-      const Scaffold(body: Center(child: Text('Messages Placeholder'))),
+      const HiringScreen(),
+      const MessagesScreen(),
       _profileBody(context),
     ];
 
